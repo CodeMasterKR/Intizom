@@ -1,0 +1,46 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Environment variables (SECRET — hech qachon commit qilinmasin)
+.env
+.env.*
+!.env.example
+
+# Build outputs
+dist/
+build/
+**/dist/
+**/build/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Prisma generated
+prisma/generated/
+
+# Uploads (user files)
+backend/uploads/
+
+# Keystore (Android signing key)
+*.jks
+
+# Coverage
+coverage/
+.nyc_output/

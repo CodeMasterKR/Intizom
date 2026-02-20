@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Intizom</string>
+    <string name="title_activity_main">Intizom</string>
+    <string name="package_name">uz.intizom.app</string>
+    <string name="custom_url_scheme">uz.intizom.app</string>
+</resources>

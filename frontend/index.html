@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="uz" class="">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%230a9090'><path d='M13 2L3 14h9l-1 8 10-12h-9l1-8z'/></svg>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Intizom - Odatlar, vazifalar va maqsadlar boshqaruvi" />
+    <title>Intizom</title>
+    <script>
+      (function() {
+        try {
+          var stored = JSON.parse(localStorage.getItem('intizom-ui') || '{}');
+          var theme = stored.state && stored.state.theme;
+          var dark = theme === 'dark' || (theme !== 'light' && window.matchMedia('(prefers-color-scheme: dark)').matches);
+          if (dark) document.documentElement.classList.add('dark');
+        } catch(e) {}
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
