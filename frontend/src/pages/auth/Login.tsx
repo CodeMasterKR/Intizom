@@ -59,7 +59,6 @@ export function Login() {
 
   const handleGoogleLogin = useGoogleLogin({
     flow: 'implicit',
-    ux_mode: 'popup',
     onSuccess: async (tokenResponse) => {
       try {
         setGoogleLoading(true);

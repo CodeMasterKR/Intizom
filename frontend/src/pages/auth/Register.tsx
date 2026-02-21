@@ -42,7 +42,6 @@ export function Register() {
 
   const handleGoogleRegister = useGoogleLogin({
     flow: 'implicit',
-    ux_mode: 'popup',
     onSuccess: async (tokenResponse) => {
       try {
         setGoogleLoading(true);
